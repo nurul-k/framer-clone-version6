@@ -1,0 +1,31 @@
+.marqueeContainer {  
+  overflow: hidden; /* Prevents overflow on the edges */  
+  white-space: nowrap; /* Prevent the text from wrapping */   
+  padding: 20px 0; /* Padding for spacing */   
+  background-color: white;
+  margin: 0 7rem;
+  margin-top: 2.5rem;
+}  
+
+.marquee {  
+  display: inline-block; /* Inline-block for horizontal layout */  
+  padding: 0 2rem; /* Spacing between logos */  
+  animation: marquee 15s linear infinite; /* Animation settings */  
+}  
+
+.logo {  
+  display: inline-block;  
+  font-size: 1rem; /* Adjust size of logos */  
+  opacity: 0.5; /* Fade effect */  
+  margin-right: 2rem; /* Space between logos */ 
+
+}  
+
+@keyframes marquee {  
+  0% {  
+    transform: translateX(0); /* Start position */  
+  }  
+  100% {  
+    transform: translateX(-100%); /* Move to the left completely */  
+  }  
+}  
