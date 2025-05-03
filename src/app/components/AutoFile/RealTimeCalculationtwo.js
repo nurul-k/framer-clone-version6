@@ -1,9 +1,8 @@
-// src/app/components/RealTimeCalculation.js  
-import styles from './RealTimeCalculation.module.css';  
+import styles from './AutoFile.module.css';  
 
 const RealTimeCalculationtwo = () => {  
   return (  
-    <div className={styles.calculationContainer}>  
+    <div className={styles.autoFileContainer}>  
       <div className={styles.textContainer}>  
         <h2 className={styles.title}>Get support when you need it most</h2>  
         <p className={styles.description}>  

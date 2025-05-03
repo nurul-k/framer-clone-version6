@@ -8,7 +8,6 @@ import ContainerboxThree from './Containerbox/ContainerboxThree.js';
 import ContainerboxFour from './Containerbox/ContainerboxFour.js';
 import ContainerboxFive from './Containerbox/ContainerboxFive.js';
 import ContainerboxSix from './Containerbox/ContainerboxSix.js';
-//import Navbar from './Navbar/Navbar.js';
 import { HeroSection } from './HeroSection/HeroSection.js';
 import Footer from './Footer/Footer.js';
 

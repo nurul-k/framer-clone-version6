@@ -1,20 +1,35 @@
-import Link from "next/link"; 
 
+
+
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
-  return (
-    <nav className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-header">
-      <h1 className="webName d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        KRYSTA
-      </h1>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <ul className="nav nav-pills">
-      <li className="nav-item">
-          <Link href="/" className="nav-link" aria-current="page">
-          </Link>
-        </li>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <nav className="navbar-container sticky-header">
+      <h1 className="webName">KRYSTA</h1>
+
+      {/* Hamburger / Close Icon */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        {menuOpen ? (
+          <span className="close-icon">&#x2715;</span> // ✖
+        ) : (
+          <span className="hamburger-icon">&#9776;</span> // ☰
+        )}
+      </div>
+
+      {/* Desktop Menu */}
+      <ul className="nav nav-pills desktop-menu">
         <li className="nav-item">
-          <Link href="/product" className="nav-link" aria-current="page">
+          <Link href="/product" className="nav-link">
             Product
           </Link>
         </li>
@@ -29,6 +44,27 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      {/* Mobile Menu (sidebar) */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        <ul className="nav nav-pills">
+          <li className="nav-item">
+            <Link href="/product" className="nav-link" onClick={toggleMenu}>
+              Product
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/Solutoions" className="nav-link" onClick={toggleMenu}>
+              Solutions
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/contact" className="nav-link" onClick={toggleMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

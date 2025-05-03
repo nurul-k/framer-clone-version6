@@ -69,3 +69,15 @@
 .column li:hover {
   text-decoration: underline;
 } 
+
+@media only screen and (min-width: 340px) and (max-width: 450px){
+  .footer{
+    flex-direction: column;
+  }
+  .icon{
+    margin: 2.5rem 0;
+  }
+  .socialIcons{
+    margin: 2.5rem 0;
+  }
+}

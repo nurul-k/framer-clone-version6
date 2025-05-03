@@ -34,16 +34,3 @@ const LogoMarquee = () => {
 };  
 
 export default LogoMarquee;  
-
-
-
-
-
-
-
-
-
-
-
-
-

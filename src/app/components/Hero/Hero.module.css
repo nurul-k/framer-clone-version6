@@ -68,38 +68,48 @@
 
 
 /* Responsive Design */  
-@media screen and (max-width: 768px) {  
-  .heroContainer {  
-    flex-direction: column;  
-    padding: 2rem 0;  
-    justify-content: center;  
-    align-items: center;  
-  }  
 
-  .textContainer {  
-    max-width: 100%;  
-    margin-left: 0;  
-    padding: 0 2rem;  
-    text-align: center;  
+@media only screen and (min-width: 340px) and (max-width: 395px){ 
+  .textContainer{
+    margin-left: -2rem;
+  }
+  .heroTitle{
+    font-size: 2.2rem;
+  }
+  .heroDescription{
+    font-size: 0.9rem;
+  }
+  .imageContainer {  
+    display: none; /* Hide image on mobile */  
+    width: 0;  
+    height: 0;  
+    margin: 0;  
   }  
-
-  .heroTitle {  
-    font-size: 2.5rem;  
-    text-align: center;  
+}
+  @media only screen and (min-width: 400px) and (max-width: 450px){ 
+    .textContainer{
+      margin-left: -2rem;
+    }
+    .heroTitle{
+      font-size: 2.2rem;
+    }
+    .heroDescription{
+      font-size: 0.9rem;
+    }
+  .imageContainer {  
+    display: none; /* Hide image on mobile */  
+    width: 0;  
+    height: 0;  
+    margin: 0;  
   }  
-
-  .heroDescription {  
-    font-size: 1rem;  
-    text-align: center;  
-    margin: 1rem 0;  
-  }  
-
-  .signupButton {  
-    padding: 8px 15px;  
-    font-size: 0.9rem;  
-    display: block;  
-    margin: 1rem auto;  
-  }  
+}
+@media only screen and (min-width: 700px) and (max-width: 770px){  
+  .textContainer{
+    margin-left: -2rem;
+  }
+  .heroTitle{
+    font-size: 3rem;
+  }
 
   .imageContainer {  
     display: none; /* Hide image on mobile */  
@@ -108,22 +118,11 @@
     margin: 0;  
   }  
 }  
-
-@media screen and (max-width: 480px) {  
-  .heroContainer {  
-    padding: 1rem 0;  
-  }  
-
-  .heroTitle {  
-    font-size: 2rem;  
-  }  
-
-  .heroDescription {  
-    font-size: 0.9rem;  
-  }  
-
-  .signupButton {  
-    padding: 6px 12px;  
-    font-size: 0.8rem;  
-  }  
-} 
+@media only screen and (min-width: 800px) and (max-width: 825px){
+  .textContainer{
+    margin-left: -2rem;
+  }
+  .heroTitle{
+    font-size: 3.5rem;
+  }
+}

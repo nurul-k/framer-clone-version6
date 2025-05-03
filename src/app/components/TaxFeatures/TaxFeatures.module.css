@@ -40,3 +40,60 @@
     color: #555;
     line-height: 1.6;
   }
+
+  @media only screen and (min-width: 340px) and (max-width: 355px){
+    .featuresContainer {
+      flex-direction: column;
+    } 
+    .featureCard{
+      width: 20rem;
+      margin-left: -0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media only screen and (min-width: 356px) and (max-width: 365px){
+    .featuresContainer {
+      flex-direction: column;
+    } 
+    .featureCard{
+      width: 20rem;
+      margin-left: -0.2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media only screen and (min-width: 366px) and (max-width: 395px){
+    .featuresContainer {
+      flex-direction: column;
+    } 
+    .featureCard{
+      width: 20rem;
+      margin-left: 0.7rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media only screen and (min-width: 400px) and (max-width: 450px){
+    .featuresContainer {
+      flex-direction: column;
+    } 
+    .featureCard{
+      width: 20rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 460px) and (max-width: 770px){
+    .featuresContainer {
+      flex-direction: column;
+    } 
+    .featureCard{
+      width: 70%;
+      margin-left: 7rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }

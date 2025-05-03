@@ -1,9 +1,8 @@
-// src/app/components/RealTimeCalculation.js  
-import styles from './RealTimeCalculation.module.css';  
+import styles from './AutoFile.module.css';  
 
 const RealTimeCalculation = () => {  
   return (  
-    <div className={styles.calculationContainer}>  
+    <div className={styles.autoFileContainer}>  
       <div className={styles.textContainer}>  
         <h2 className={styles.title}>Sell across more channels with less effort</h2>  
         <p className={styles.description}>  

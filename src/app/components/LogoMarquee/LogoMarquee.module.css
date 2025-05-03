@@ -29,3 +29,9 @@
     transform: translateX(-100%); /* Move to the left completely */  
   }  
 }  
+
+@media only screen and (min-width: 340px) and (max-width: 480px){
+  .marqueeContainer{
+    margin: 2rem 2rem;
+  }
+}
