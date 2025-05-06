@@ -6,7 +6,7 @@
   flex-direction: row; /* Side-by-side layout */  
   justify-content: space-between; /* Space between text and image */  
   align-items: center;  /* Center align items vertically */  
-  padding: 4rem 0 4rem 4rem; /* Increased padding for a more spacious layout */  
+  padding: 0 0 6rem 4rem; /* Increased padding for a more spacious layout */  
   background: linear-gradient(180deg, rgba(214, 224, 255, 1) 0%, rgb(25, 79, 226) 100%);
 }  
 
@@ -27,6 +27,7 @@
   font-size: 5rem; /* Font size adjusted for a better look */  
   font-weight: 700; /* Adjusted font weight */  
   margin-bottom: 1rem; /* Spacing below the title */  
+  margin-top: -2rem;
 }  
 
 .gradientText {  
@@ -35,18 +36,66 @@
   -webkit-text-fill-color: transparent;  
 }  
 
-.heroDescription {  
-  text-align: left;  
-  margin-top: 10px;  
-  margin-bottom: 2rem;  
-  font-size: 1.25rem; /* Font size adjusted */  
-  color: rgba(0, 0, 0, 0.7); /* Slightly lighter color for description */  
+.container {  
+  outline: none;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: flex-start;  
+  opacity: 0.8;  
+  flex-shrink: 0;  
+  will-change: transform;  
+  transform: perspective(1200px);  
+  
+  margin-bottom: 2rem;
 }  
+
+.text {  
+  box-sizing: border-box;
+color: rgb(0, 0, 0);
+display: block;
+font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+font-feature-settings: normal;
+font-size: 1.2rem;
+font-style: normal;
+font-variation-settings: normal;
+font-weight: 400;
+height: 44.8px;
+letter-spacing: normal;
+line-height: 22.4px;
+margin-block-end: 0px;
+margin-block-start: 0px;
+margin-bottom: 0px;
+margin-inline-end: 0px;
+margin-inline-start: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: left;
+text-decoration-color: rgb(0, 0, 0);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+text-transform: none;
+text-wrap-mode: wrap;
+text-wrap-style: auto;
+unicode-bidi: isolate;
+white-space-collapse: preserve;
+width: 390.4px;
+word-break: break-word;
+-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+-webkit-text-stroke-width: 0px;
+}   
 
 .signupButton {  
   padding: 10px 20px;  
   border: 1px solid rgba(255, 255, 255, 0.12);  
-  background-color: rgb(37, 37, 37); /* Button color changed to match */  
+  background-color: rgb(29, 29, 29); /* Button color changed to match */  
   border-radius: 10px;  
   color: white;  
   text-decoration: none;  
@@ -56,20 +105,26 @@
 }  
 
 .signupButton:hover {  
-  background-color: rgba(30, 55, 145, 1); /* Darker blue on hover */  
+  color: #c3c3c3; /* Darker blue on hover */  
 }  
 
 .imageContainer {  
   position: relative;  
   width: 30%; /* Adjusted width to fit the design better */  
   max-width: 400px; 
-  margin-right: 10rem;
+  margin-right: 16rem;
+  margin-top: 7rem;
+  margin-bottom: -6rem;
 }
 
 
 /* Responsive Design */  
 
-@media only screen and (min-width: 340px) and (max-width: 395px){ 
+@media only screen and (min-width: 340px) and (max-width: 380px){
+  .heroContainer{
+    padding-top: 5rem;
+    margin-left: -1rem;
+  } 
   .textContainer{
     margin-left: -2rem;
   }
@@ -79,6 +134,15 @@
   .heroDescription{
     font-size: 0.9rem;
   }
+  .text{
+    font-size: 1rem;
+    width: 20rem;
+    color: rgb(21, 21, 21);
+  }
+  .signupButton{
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
   .imageContainer {  
     display: none; /* Hide image on mobile */  
     width: 0;  
@@ -86,16 +150,32 @@
     margin: 0;  
   }  
 }
-  @media only screen and (min-width: 400px) and (max-width: 450px){ 
-    .textContainer{
-      margin-left: -2rem;
-    }
-    .heroTitle{
-      font-size: 2.2rem;
-    }
-    .heroDescription{
-      font-size: 0.9rem;
-    }
+
+
+@media only screen and (min-width: 381px) and (max-width: 450px){
+  .heroContainer{
+    padding-top: 5rem;
+    margin-left: -1rem;
+  } 
+  .textContainer{
+    margin-left: -2rem;
+  }
+  .heroTitle{
+    font-size: 2.2rem;
+  }
+  .heroDescription{
+    font-size: 0.9rem;
+  }
+  .text{
+    font-size: 1rem;
+    width: 22rem;
+    color: rgb(21, 21, 21);
+    margin-top: 0.5rem;
+  }
+  .signupButton{
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }
   .imageContainer {  
     display: none; /* Hide image on mobile */  
     width: 0;  
@@ -103,12 +183,19 @@
     margin: 0;  
   }  
 }
+  
 @media only screen and (min-width: 700px) and (max-width: 770px){  
   .textContainer{
     margin-left: -2rem;
   }
   .heroTitle{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    width: 30rem;
+  }
+  .text{
+    width: 30rem;
+    font-size: 1rem;
   }
 
   .imageContainer {  

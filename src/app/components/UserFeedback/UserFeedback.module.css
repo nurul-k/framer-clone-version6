@@ -1,51 +1,174 @@
 .userFeedbackContainer {
+  width: 100%;
+  min-height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 2rem;
-  background-color: #f9fafb; /* soft light background */
-  min-height: 300px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background: white;
+  padding: 40px 20px;
+  flex-direction: column;
+}
+
+.testimonial{
+  border: 1px solid rgb(229, 228, 228);
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  margin-top: 5rem;
+}
+
+.heading{
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-bottom: 9rem;
+}
+
+.testimonialSection {
+  max-width: 600px;
+  text-align: center;
   position: relative;
 }
 
-.feedbackCard {
-  background-color: #ffffff;
-  padding: 2rem 3rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-  transition: all 0.5s ease;
+.companyInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  font-weight: 600;
+  font-size: 16px;
+  color: #666;
+}
+
+.companyLogo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.companyName {
+  font-size: 14px;
+  color: #666;
 }
 
 .feedbackText {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #111827; /* dark text */
-  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 500px;
+  margin: 0 auto 25px;
+  line-height: 1.4;
+  color: #050505;
 }
 
-/* Fade animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 30px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .feedbackCard {
-    padding: 2rem;
-  }
+.userAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .feedbackText {
-    font-size: 1.25rem;
+.userDetails {
+  text-align: center;
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  color: #050505;
+}
+
+.userTitle {
+  font-size: 14px;
+  color: #777;
+  margin-top: 2px;
+}
+
+/* Navigation arrows */
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Disable if you want arrows clickable only */
+  margin: 0 -5.5rem;
+}
+
+.navArrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.75;
+  pointer-events: auto; /* Enable clicks */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navArrow:hover {
+  opacity: 1;
+}
+
+/* Pagination Dots */
+
+.paginationDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.dot:hover {
+  opacity: 1;
+}
+
+.activeDot {
+  background-color: #050505;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 770px){
+  .heading{
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 771px) and (max-width: 825px){
+  .heading{
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 826px) and (max-width: 1025px){
+  .heading{
+    font-size: 2.6rem;
   }
 }

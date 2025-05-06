@@ -10,7 +10,7 @@ const HeroTwo = () => {
             <div className={styles.textContainer}>  
                 <h1 className={styles.heroTitle}>  
                     <span className={styles.gradientText}>  
-                        Sales Tax <br/> Compliance, <br/> Simplified  
+                        Sales Tax  Compliance,  Simplified  
                     </span>  
                 </h1>  
                 <p className={styles.heroDescription}>  

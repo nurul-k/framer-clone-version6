@@ -1,37 +1,66 @@
 .marqueeContainer {  
-  overflow: hidden; /* Prevents overflow on the edges */  
-  white-space: nowrap; /* Prevent the text from wrapping */   
-  padding: 20px 0; /* Padding for spacing */   
-  background-color: white;
-  margin: 0 7rem;
-  margin-top: 2.5rem;
+  overflow: hidden;  
+  white-space: nowrap;  
+  padding: 20px 0;  
+  background-color: white;  
+
+  /* On large screens, use max-width and auto margins for better responsiveness */  
+  max-width: 1200px;  
+  margin: 2.5rem auto;  
 }  
 
 .marquee {  
-  display: inline-block; /* Inline-block for horizontal layout */  
-  padding: 0 2rem; /* Spacing between logos */  
-  animation: marquee 15s linear infinite; /* Animation settings */  
+  display: inline-flex; /* use flex instead of inline-block */  
+  animation: marquee 30s linear infinite; /* slower for smoothness */  
 }  
 
 .logo {  
-  display: inline-block;  
-  font-size: 1rem; /* Adjust size of logos */  
-  opacity: 0.5; /* Fade effect */  
-  margin-right: 2rem; /* Space between logos */ 
+  font-size: 1rem;  
+  color: rgba(31, 31, 31, 0.978);  
+  color: #6c6b6b; /* fallback */  
+  margin-right: 2rem;  
+  white-space: nowrap;  
+}   
+.logoImage {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  color: #6c6b6b; /* fallback */  
+}
 
-}  
-
+/* Animate from 0 to -50% because content is duplicated */  
 @keyframes marquee {  
   0% {  
-    transform: translateX(0); /* Start position */  
+    transform: translateX(0%);  
   }  
   100% {  
-    transform: translateX(-100%); /* Move to the left completely */  
+    transform: translateX(-50%);  
   }  
 }  
 
-@media only screen and (min-width: 340px) and (max-width: 480px){
+/* Responsive tweaks */  
+@media only screen and (max-width: 480px) {  
+  .marqueeContainer {  
+    margin: 2rem;  
+    max-width: 100%;  
+    padding: 10px 0;  
+  }  
+  .logo {  
+    font-size: 0.9rem;  
+    margin-right: 1rem;  
+  }  
+}  
+
+@media only screen and (min-width: 700px) and (max-width: 770px){
   .marqueeContainer{
-    margin: 2rem 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px){
+  .marqueeContainer{
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }

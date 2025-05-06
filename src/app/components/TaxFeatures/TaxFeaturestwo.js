@@ -12,7 +12,7 @@ const TaxFeaturestwo = () => {
         />
         <h3 className={styles.featureTitle}>Instant Tax Calculations</h3>
         <p className={styles.featureDescription}>
-          Get precise, real-time tax rates at checkout based on location, product type, and tax laws, ensuring compliance and a seamless customer experience.
+        Automatically track tax rules and rates across all states, keeping your business compliant everywhere you sell.
         </p>
       </div>
       <div className={styles.featureCard}>
@@ -23,7 +23,7 @@ const TaxFeaturestwo = () => {
         />
         <h3 className={styles.featureTitle}>Auto Filing & Payments</h3>
         <p className={styles.featureDescription}>
-          We automatically file your tax returns and submit payments on time, ensuring compliance without the hassle.
+        Access clear, detailed tax reports that keep your records organized, making audits and compliance checks stress-free.
         </p>
       </div>
      
@@ -32,4 +32,6 @@ const TaxFeaturestwo = () => {
 };
 
 export default TaxFeaturestwo;
+
+
 

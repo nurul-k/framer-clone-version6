@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar.js";
 
+
 export const HeroSection = () => {
 
   const [isSticky, setIsSticky] = useState(false);
@@ -16,7 +17,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <header
+    <header 
       className={isSticky ? 'header sticky' : 'header'} id="nav-header"> <Navbar/>
     </header>
   )

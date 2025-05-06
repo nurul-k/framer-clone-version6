@@ -4,7 +4,8 @@ import styles from './TrustedByBusinesses.module.css';
 const TrustedByBusinesses = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Trusted by Businesses of All Sizes</h2>
+        <p className={styles.heading}>Boost your productivity</p>
+      <h2 className={styles.title}>Trusted by Businesses <br/> of All Sizes</h2>
       <p className={styles.description}>
         {"From startups to enterprises, businesses across industries rely on Krysta Compliance to stay tax-compliant without the headaches."}
       </p>
@@ -50,3 +51,13 @@ const TrustedByBusinesses = () => {
 };
 
 export default TrustedByBusinesses;
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
   align-items: flex-start;
   background-color: #000;
   color: #fff;
-  padding: 40px;
+  padding: 5rem 40px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -41,11 +41,12 @@
   flex: 2;
   display: flex;
   justify-content: space-between;
+  margin-right: -17rem;
 }
 
 .column {
   flex: 1;
-  margin-right: 20px;
+  margin-right: -20px;
 }
 
 .column h4 {
@@ -70,14 +71,85 @@
   text-decoration: underline;
 } 
 
-@media only screen and (min-width: 340px) and (max-width: 450px){
+@media only screen and (min-width: 340px) and (max-width: 770px){
   .footer{
     flex-direction: column;
   }
+  .rightSection{
+    flex-direction: column;
+  }
+  .column{
+    margin-top: 0.7rem;
+  }
   .icon{
     margin: 2.5rem 0;
+    color: white;
+  }
+  .info{
+    color: rgba(255, 255, 255, 0.5);
   }
   .socialIcons{
     margin: 2.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .list{
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 830px){
+  .footer{
+    flex-direction: column;
+  }
+  .rightSection{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .column{
+    margin-top: 0.7rem;
+    margin-right: 12rem;
+  }
+  .icon{
+    margin: 2.5rem 0;
+    color: white;
+  }
+  .info{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .socialIcons{
+    margin: 2.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .list{
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+@media only screen and (min-width: 831px) and (max-width: 1025px){
+  .footer{
+    flex-direction: column;
+  }
+  .rightSection{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .column{
+    margin-top: 0.7rem;
+    margin-right: 20rem;
+  }
+  .icon{
+    margin: 2.5rem 0;
+    color: white;
+  }
+  .info{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .socialIcons{
+    margin: 2.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .list{
+    color: rgba(255, 255, 255, 0.5);
   }
 }

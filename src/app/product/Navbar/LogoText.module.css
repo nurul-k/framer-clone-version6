@@ -1,0 +1,47 @@
+.container {  
+  outline: none;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: flex-start;  
+  flex-shrink: 0;  
+  opacity: 1;  
+  width: 220.07px; /* match SVG viewBox width */  
+  height: 65px;    /* match SVG viewBox height */  
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+}  
+
+.foreignObject {  
+  overflow: visible;  
+  transform-origin: center center;  
+  width: 100%;  
+  height: 100%;  
+}  
+
+.text {  
+  font-family: 'Koulen', sans-serif;  
+  font-size: 60.25px;  
+  letter-spacing: -0.07px;  
+  margin: 0;  
+}  
+
+.link {  
+  color: inherit;  
+  text-decoration: none;  
+  cursor: pointer;  
+}  
+
+.link:hover {  
+  text-decoration: none;  
+}  
+
+
+@media only screen and (min-width: 340px) and (max-width: 440px){
+  .container {
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+  .mobile-menu .nav-pills{
+    height: 10rem;
+  }
+}

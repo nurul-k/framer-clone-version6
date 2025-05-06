@@ -2,7 +2,7 @@ import styles from './Footer.module.css';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { 
   FaInstagram, FaPinterest, FaLinkedin, FaTiktok, FaYoutube, 
-  FaFacebook, FaTwitter 
+  FaFacebook, FaTwitter
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -11,12 +11,12 @@ const Footer = () => {
       <div className={styles.leftSection}>
         <h1 className={styles.logo}>KRYSTA</h1>
         <div className={styles.contactInfo}>
-          <p>
+          <p className={styles.info}>
             <FaMapMarkerAlt className={styles.icon} /> 10019 NE 141st Street Kirkland WA 98034
             <br />
             United States
           </p>
-          <p>
+          <p className={styles.info}>
             <FaPhoneAlt className={styles.icon} /> Call us: +919818187261
           </p>
         </div>
@@ -32,7 +32,7 @@ const Footer = () => {
       <div className={styles.rightSection}>
         <div className={styles.column}>
           <h4>Product</h4>
-          <ul>
+          <ul className={styles.list}>
             <li>Sales Tax Platform</li>
             <li>Real Time Calculation</li>
             <li>Sales Tax Reports</li>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className={styles.column}>
           <h4>Solutions</h4>
-          <ul>
+          <ul className={styles.list}>
             <li>Retail</li>
             <li>Food and Beverage</li>
             <li>Medical</li>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className={styles.column}>
           <h4>Company</h4>
-          <ul>
+          <ul className={styles.list}>
             <li>Contact us</li>
           </ul>
         </div>

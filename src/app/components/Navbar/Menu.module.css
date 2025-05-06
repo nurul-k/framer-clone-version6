@@ -1,0 +1,32 @@
+.container {  
+  opacity: 1;  
+  display: flex;  
+  gap: 2rem; /* adjust spacing between items */  
+}  
+
+.menuItem {  
+  opacity: 1;  
+}  
+
+.link {  
+  opacity: 1;  
+  text-decoration: none;  
+  color: rgb(0, 0, 0);  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: flex-start;  
+  flex-shrink: 0;  
+  opacity: 0.6;  
+  outline: none;  
+  will-change: transform;  
+  transform: none;  
+  cursor: pointer;  
+}  
+
+.text {  
+  color: rgb(0, 0, 0);  
+  opacity: 0.6;  
+  margin: 0;  
+  /* Use your font properties if known: font-family, size etc */  
+  font-size: 1rem; /* Example font size */  
+}  
