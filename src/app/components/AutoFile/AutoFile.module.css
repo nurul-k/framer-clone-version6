@@ -3,47 +3,107 @@
   justify-content: space-between;  
   align-items: flex-start;  
   padding: 10rem 10rem;  
-  background-color: white;
-  border-radius: 15px; /* Rounded corners */  
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */  
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px; /* Rounded corners */     
+  margin-top: 125px;
 }  
 
 .textContainer {  
   flex: 1;  
-  max-width: 500px; /* Limit width for text */  
+  max-width: 50%; /* Limit width for text */  
   margin-right: 2rem; /* Space between text and table */  
 }  
 
 .title {  
-  font-size: 2.2rem; /* Title font size */  
+  font-size: 36px; /* Title font size */  
   color: #000; /* Title color */  
-  margin-bottom: 1rem; /* Space below the title */  
+  margin-bottom: 20px; /* Space below the title */  
   font-weight: 600; 
+  font-family: Switzer, "Switzer Placeholder", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: -0.5px;
+  line-height: 39.6px;
+  padding-top: 11.5px;
 }  
 
 .description {  
-  font-size: 1rem; /* Font size for description */  
-  color: #141414;/* Text color for readability */  
-  margin-bottom: 2rem; /* Space below the description */  
+  font-size: 22px; /* Font size for description */  
+  color: rgb(0, 0, 0);/* Text color for readability */  
+  margin-bottom: 20px; /* Space below the description */
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;  
+  font-weight: 400;
+  overflow-wrap: break-word;
+  font-style: normal;
+  box-sizing: border-box;
+  line-height: 30.8px;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  width: 510px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }  
 
 .learnMoreButton {  
-  padding: 0.8rem 1.5rem; /* Button padding */  
-  background-color: #000; /* Button background color */  
-  color: #fff; /* Button text color */  
-  border: none;  
-  border-radius: 8px; /* Rounded corners for button */  
-  cursor: pointer; /* Change cursor on hover */  
-  transition: background-color 0.3s; /* Smooth transition */  
-  font-size: 0.7rem; /* Button font size */  
+  align-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0.602187px 1.80656px -1.25px,
+              rgba(0, 0, 0, 0.063) 0px 2.28853px 6.8656px -2.5px,
+              rgba(0, 0, 0, 0.024) 0px 10px 30px -3.75px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  column-gap: 4px;
+  cursor: pointer;
+  display: flex;
+  filter: brightness(1);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-weight: 500;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-size: 16px;
+  height: 39.2px;
+  justify-content: center;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  row-gap: 4px;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  width: 148.488px;
+  will-change: auto;
+  -webkit-font-smoothing: antialiased;
+
 }  
 
 .learnMoreButton:hover {  
-  background-color: #333; /* Darker shade on hover */  
+  color: rgb(183, 183, 183); /* Darker shade on hover */  
 }  
 
 .imageContainer img{
-  border-radius: 1.8rem;
+ border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+box-sizing: border-box;
+display: block;
+font-family: sans-serif;
+font-size: 12px;
+height: 382px;
+object-fit: cover;
+object-position: 50% 50%;
+overflow-clip-margin: content-box;
+overflow-x: clip;
+overflow-y: clip;
+width: 475px;
+-webkit-font-smoothing: antialiased;
+  aspect-ratio: auto 1024 / 876;
+  margin-right: 73px;
+  margin-top: -8px;
 }
 
 
@@ -96,7 +156,54 @@
   }
 }
 
-@media (min-width: 765px) and (max-width: 1024px) {
+@media (min-width: 760px) and (max-width: 774px) {
+  .autoFileContainer {
+    flex-direction: column;
+    padding: 3rem 1.5rem;  /* reduce heavy padding */
+    margin-top: 60px;      /* smaller top margin */
+    align-items: center;
+  }
+
+  .textContainer {
+    max-width: 100%;
+    width: 320px;          /* narrower text container */
+    margin: 0 0 30px 0;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 24px;       /* smaller title font */
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+    padding-top: 0;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;           /* full container width */
+    margin-bottom: 20px;
+  }
+
+  .learnMoreButton {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .imageContainer img {
+    width: 320px;          /* smaller image */
+    height: auto;          /* maintain aspect ratio */
+    margin: 0 auto;
+    margin-top: 0;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 775px) and (max-width: 1024px) {
   .autoFileContainer {
     flex-direction: row;
     padding: 5rem 3rem;

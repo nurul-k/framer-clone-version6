@@ -1,24 +1,33 @@
 .container {
   width: 100%;
-  padding: 5rem 2rem;
-  background: linear-gradient(to bottom, #f0f0f5 0%, #d9ddf2 100%);
+  padding: 20px 40px;
+  background: linear-gradient(rgb(242, 247, 255) 40.1323%, rgb(209, 220, 255));
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-clip: border-box;
+  box-sizing: border-box;
+  border: 0.5px ;
 }
 
 .heading{
   border: 1px solid rgb(189, 189, 189);
-  padding: 0.3rem;
+  padding: 8px 13px;
   border-radius: 0.7rem;
   font-size: 0.9rem;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-weight: 500;
+  line-height: 18.2px;
+  margin-top: 25px;
+  width: 167.3;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 54px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  font-family: Switzer, "Switzer Placeholder", sans-serif;
+  font-weight: 600;
 }
 
 .description {
@@ -30,13 +39,13 @@ font-feature-settings: normal;
 font-size: 22px;
 font-style: normal;
 font-variation-settings: normal;
-font-weight: 100;
+font-weight: 400;
 height: 92.4px;
 letter-spacing: normal;
 line-height: 30.8px;
 margin-block-end: 0px;
 margin-block-start: 0px;
-margin-bottom: 7rem;
+margin-bottom: 105px;
 margin-inline-end: 0px;
 margin-inline-start: 0px;
 margin-left: 0px;
@@ -80,14 +89,15 @@ word-break: break-word;
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 12px;
   margin-bottom: 1rem;
 }
 
 .featureTitle {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  font-family: Switzer, "Switzer Placeholder", sans-serif;
 }
 
 .featureDescription {
@@ -95,13 +105,15 @@ word-break: break-word;
   color: #555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-weight: 400;
 }
 
 .learnMoreButton {
   background: none;
   border: none;
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -109,6 +121,7 @@ word-break: break-word;
   padding: 0;
   font-size: 1rem;
   position: relative;
+ font-family: Satoshi, "Satoshi Placeholder", sans-serif;
 }
 
 .learnMoreButton::after {

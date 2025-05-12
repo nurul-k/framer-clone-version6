@@ -1,5 +1,5 @@
 
-import styles from './Containerbox.module.css';  
+import styles from './ContainerboxSix.module.css';  
 
 const ContainerboxSix = () => {  
 

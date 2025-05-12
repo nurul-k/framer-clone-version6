@@ -8,33 +8,51 @@
   text-align: center;
   padding: 0 1rem;
   background-color: #fff; /* white background */
+  margin-bottom: -9rem;
 }
 
 .badge {
   display: inline-block;
-  padding: 6px 16px;
-  background-color: #f4f4f5;
+  padding: 8px 13px;
+  background-color: white;
   color: #000;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 9999px; /* fully rounded */
+  border-radius: 10px; /* fully rounded */
+  border: 0.3px solid rgb(224, 224, 224);
   margin-bottom: 20px;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  letter-spacing: -0.2px;
+  line-height: 18.2px;
+  row-gap: 6px;
+  column-gap: 6px;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 59.4px;
   color: #000;
   margin: 0 0 24px 0;
+  font-family: Switzer, "Switzer Placeholder", sans-serif;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .description {
-  font-size: 20px;
+  box-sizing: border-box;
+  font-size: 22px;
   font-weight: 400;
   color: #090909;
   max-width: 600px;
-  width: 500px;
+  height: 61.6px;
+  width: 550px;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30.8px;overflow-wrap: break-word;
+  white-space-collapse: preserve;
+  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 340px) and (max-width: 450px){
   .container {

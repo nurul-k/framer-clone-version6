@@ -1,27 +1,38 @@
 import styles from './Footer.module.css';
-import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaMobileAlt } from 'react-icons/fa';
 import { 
   FaInstagram, FaPinterest, FaLinkedin, FaTiktok, FaYoutube, 
   FaFacebook, FaTwitter
 } from 'react-icons/fa';
 
+// Import Koulen font
+import { Koulen } from 'next/font/google';
+const koulen = Koulen({ subsets: ['latin'], weight: '400' });
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
-        <h1 className={styles.logo}>KRYSTA</h1>
+      <h1 className={`${styles.logo} ${koulen.className}`}>KRYSTA</h1>
         <div className={styles.contactInfo}>
-          <p className={styles.info}>
-            <FaMapMarkerAlt className={styles.icon} /> 10019 NE 141st Street Kirkland WA 98034
+        <div className={styles.address}> 
+        <FaMapMarkerAlt className={styles.icon1} />
+          <p className={styles.info1}>
+           10019 NE 141st Street Kirkland WA 98034
             <br />
             United States
           </p>
-          <p className={styles.info}>
-            <FaPhoneAlt className={styles.icon} /> Call us: +919818187261
+          </div>
+
+          <div className={styles.phone}> 
+          <p className={styles.info2}>
+            <FaMobileAlt className={styles.icon2} /> Call us: +919818187261
           </p>
+          </div>
         </div>
+
         <div className={styles.socialIcons}>
-          <FaFacebook className={styles.socialIcon} />
+          <FaTwitter className={styles.socialIcon} />
           <FaInstagram className={styles.socialIcon} />
           <FaPinterest className={styles.socialIcon} />
           <FaLinkedin className={styles.socialIcon} />
@@ -66,3 +77,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

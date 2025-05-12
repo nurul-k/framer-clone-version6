@@ -1,31 +1,38 @@
 .marqueeContainer {  
   overflow: hidden;  
   white-space: nowrap;  
-  padding: 20px 0;  
-  background-color: white;  
-
+  padding: 25px 0;  
+  background-color: rgb(255, 255, 255);  
   /* On large screens, use max-width and auto margins for better responsiveness */  
   max-width: 1200px;  
   margin: 2.5rem auto;  
+  row-gap: ;
 }  
 
 .marquee {  
   display: inline-flex; /* use flex instead of inline-block */  
   animation: marquee 30s linear infinite; /* slower for smoothness */  
+  font-family: Chillax, "Chillax Placeholder", sans-serif;
+  font-weight: 600;
 }  
+.specialFont {
+  font-family: 'Panchang', sans-serif;
+  font-weight: bold; /* optional, depends on your style */
+}
+
 
 .logo {  
   font-size: 1rem;  
-  color: rgba(31, 31, 31, 0.978);  
-  color: #6c6b6b; /* fallback */  
   margin-right: 2rem;  
   white-space: nowrap;  
+  filter: contrast(0);
 }   
 .logoImage {
   width: 24px;
   height: 24px;
   object-fit: contain;
   color: #6c6b6b; /* fallback */  
+  margin-right: 4px;
 }
 
 /* Animate from 0 to -50% because content is duplicated */  

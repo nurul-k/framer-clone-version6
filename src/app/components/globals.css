@@ -1,5 +1,238 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');  
 
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Panchang-Light.woff2') format('woff2'),
+       url('/fonts/Panchang-LIght.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('/fonts/Panchang-Medium.woff2') format('woff2'),
+       url('/fonts/Panchang-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Panchang';
+  src: url('/fonts/Panchang-Regular.woff2') format('woff2'),
+       url('/fonts/Panchang-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('/fonts/Panchang-Bold.woff2') format('woff2'),
+       url('/fonts/Panchang-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('/fonts/Panchang-Black.woff2') format('woff2'),
+       url('/fonts/Panchang-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('/fonts/Panchang-Variable.woff2') format('woff2'),
+       url('/fonts/Panchang-Variable.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Light.woff2') format('woff2'),
+       url('/fonts/Chillax-LIght.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Medium.woff2') format('woff2'),
+       url('/fonts/Chillax-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Regular.woff2') format('woff2'),
+       url('/fonts/Chillax-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Bold.woff2') format('woff2'),
+       url('/fonts/Chillax-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Black.woff2') format('woff2'),
+       url('/fonts/Chillax-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Variable.woff2') format('woff2'),
+       url('/fonts/Chillax-Variable.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Light.woff2') format('woff2'),
+       url('/fonts/Satoshi-LIght.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('/fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
+       url('/fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi-Variable.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Regular.woff2')
+  format('woff2'),
+  url('/fonts/Switzer-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Bold.woff2') format('woff2'),
+       url('/fonts/Switzer-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Black.woff2') format('woff2'),
+       url('/fonts/Switzer-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Italic.woff2') format('woff2'),
+       url('/fonts/Switzer-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Light.woff2') format('woff2'),
+       url('/fonts/Switzer-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Medium.woff2') format('woff2'),
+       url('/fonts/Switzer-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Variable.woff2') format('woff2'),
+       url('/fonts/Switzer-Variable.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
  :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -41,7 +274,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -52,7 +284,7 @@ html {
   position: sticky;
   top: 0;
 }
-
+.Switzer{font-family: 'Switzer';}
 .header {
   width: 100%;
   background: white;
@@ -133,24 +365,26 @@ html {
 }  
 
 #nav-header{
-  background-color:  rgba(214, 224, 255, 1);
+  background-color: rgb(235, 239, 255, 100%);
+  padding: 10px;
 }
 
 
 .nav-pills{
-  margin-right: -4.5rem;
-  margin-top: -2rem;
+ column-gap: 81px;
+ padding-top: 10px;
 }
 
 .nav-item {
-  margin-right: 5rem;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 .nav-link2 {
   color: rgb(97, 97, 97); 
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+ 
 }
 .nav-link2:hover{
  color: #0a0a0a;
@@ -160,14 +394,14 @@ html {
 .nav-link3 {
   color:  rgb(97, 97, 97); 
   text-decoration: none;
-  font-family: sans-serif;
-  margin-right: -2rem;
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+  padding-right: 24px;
 }
 .nav-link3:hover{
   color: #0a0a0a;
  }
 nav {
-  background-color: rgba(214, 224, 255, 1);
+  background-color: rgb(235, 239, 255, 100%);
 }
 
 /* New styles for hamburger menu behavior */
@@ -175,8 +409,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  position: relative;
+  position: fixed;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+  width: 100%;
 }
 
 
@@ -256,10 +495,16 @@ nav {
   }
 }
 
-@media only screen and (min-width: 340px) and (max-width: 440px){
+@media only screen and (min-width: 340px) and (max-width: 350px){
+  .navbar-container{
+    padding-right: 390px;
+  }
   .mobile-menu{
-    height: 10rem;
-    margin-top: 7rem !important;
+    height: auto;
+  }
+   .hamburger-icon{
+    margin-left: 60px;
+  
   }
   .mobile-menu .nav-item {
    margin: 0.2rem 0;
@@ -278,10 +523,67 @@ nav {
   
 }
 
+@media only screen and (min-width: 355px) and (max-width: 395px){
+  .navbar-container{
+    padding-right: 430px;
+  }
+  .mobile-menu{
+    height: auto;
+  }
+   .hamburger-icon{
+    margin-left: 110px;
+  
+  }
+  .mobile-menu .nav-item {
+   margin: 0.2rem 0;
+  }
+  .mobile-menu .nav-link2, 
+  .mobile-menu .nav-link3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #838383;
+  }
+  .navbar-container{
+   margin-top: -2rem;
+   margin-left: -4rem;
+   margin-right: -4rem;
+  }
+  
+}
+
+@media only screen and (min-width: 400px) and (max-width: 435px){
+  .menu-icon{
+    margin-top: 27px;
+  }
+  .navbar-container{
+    padding-right: 470px;
+  }
+  .mobile-menu{
+    height: auto;
+  }
+   .hamburger-icon{
+    margin-left: 150px;  
+  }
+  .mobile-menu .nav-item {
+   margin: 0.2rem 0;
+  }
+  .mobile-menu .nav-link2, 
+  .mobile-menu .nav-link3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #838383;
+  }
+  .navbar-container{
+   margin-top: -2rem;
+   margin-left: -4rem;
+   margin-right: -4rem;
+  }
+}
+
 @media only screen and (min-width: 765px) and (max-width: 770px){
   .menu-icon{
-    margin-right: -2rem;
-    margin-top: -2rem;
+    margin-right: 0.9px;
+    margin-top: 0rem;
   }
   .mobile-menu{
     height: 10rem;
@@ -295,6 +597,9 @@ nav {
     font-size: 1rem;
     font-weight: 700;
     color: #838383;
+  }
+  .mobile-menu{
+    height: auto;
   }
 }
 

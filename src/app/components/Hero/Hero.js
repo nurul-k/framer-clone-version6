@@ -1,5 +1,4 @@
 import styles from "./Hero.module.css";
-//import Image from 'next/image';
 import Link from "next/link";
 
 const Hero = () => {
@@ -36,8 +35,8 @@ const Hero = () => {
           src="/images/woman.avif"
           alt="Hero Image"
           layout="responsive"
-          width={400}
-          height={600}
+          width={425}
+          height={638}
         />
       </div>
     </div>
@@ -45,3 +44,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

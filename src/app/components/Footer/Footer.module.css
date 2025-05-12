@@ -10,49 +10,100 @@
 
 .leftSection {
   flex: 1;
+  margin-left: -20px;
+}
+.info1{
+  line-height: 18.2px;
+  padding-left: 5px;
+}
+
+.info2{
+  line-height: 18.2px;
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 54.2513px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contactInfo {
   margin-bottom: 20px;
   line-height: 1.8;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(222, 213, 199);
+  margin-top: 15px;
 }
 
-.icon {
+.address{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: -37.5rem;
+}
+
+.icon1 {
   margin-right: 10px;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: -0.2px;
+  height:  30px;
+  width: 30px;
+  margin-top: 4px;
+  color: white;
+}
+
+.icon2 {
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: -0.2px;
+  height:  27px;
+  width: 20px;
+  color: white;
 }
 
 .socialIcons {
   display: flex;
   gap: 15px;
+  margin-top: 90px;
 }
 
 .socialIcon {
   font-size: 20px;
   cursor: pointer;
+  font-size: 12px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  color: rgb(96, 96, 96);
 }
 
 .rightSection {
   flex: 2;
   display: flex;
-  justify-content: space-between;
-  margin-right: -17rem;
+  justify-content: flex-end;  /* align to right */
+  column-gap: 80px;            /* spacing between columns */
+  width: auto;
+  max-width: 600px;            /* keep it reasonable */
+  height: auto;                /* let content determine height */
+  margin-right: -40px;             /* remove negative margins */
+  margin-top: 2px;
 }
 
 .column {
   flex: 1;
-  margin-right: -20px;
+  margin-right: 0;
 }
 
 .column h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  margin-bottom: 16px;
+  letter-spacing: -0.2px;
 }
 
 .column ul {
@@ -62,14 +113,15 @@
 }
 
 .column li {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-size: 14px;
   cursor: pointer;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-weight: 500;
+  color: rgb(150, 149, 146);
+  letter-spacing: -0.2px;
 }
 
-.column li:hover {
-  text-decoration: underline;
-} 
 
 @media only screen and (min-width: 340px) and (max-width: 770px){
   .footer{

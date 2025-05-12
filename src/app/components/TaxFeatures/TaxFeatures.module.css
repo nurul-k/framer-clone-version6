@@ -8,14 +8,14 @@
   }
   
   .featureCard {
-    width: 45%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 40rem;
+    font-size: 12px;
+    border: 0.3px solid rgb(230, 230, 230);
   }
  
   
@@ -25,116 +25,202 @@
   }
   
   .featureImage {
-    width: 80%;
-    height: auto;
     margin-bottom: 20px;
+    font-size: 12px;
   }
   
   .featureTitle {
-    font-size: 18px;
-    font-weight: 700;
-    color: #333;
+    font-size: 26px;
+    line-height: 33.8px;
+    color: #1f1f1f;
     margin-bottom: 10px;
+    font-family: Switzer, "Switzer Placeholder", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.6px;
   }
   
   .featureDescription {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    color: #343434;
+    color: #1a1a1a;
     line-height: 1.6;
-    margin: 0 6.3rem;
+    margin: 0 7.6rem;
+    font-size: 16px;
+    font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+    height: 96px;
+    width: 300px;
   }
 
   @media only screen and (min-width: 340px) and (max-width: 355px){
     .featuresContainer {
       flex-direction: column;
-      margin-left: -0.1rem;
-    } 
-    .featureCard{
-      width: 19rem;
-      margin-left: 0rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 28rem;
-      
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;       /* smaller side margin on mobile */
+      padding: 15px 0;
     }
-    .featureDescription{
-      width: 15rem;
-      margin-left: 20px;
+  
+    .featureCard {
+      width: 320px !important;  /* override fixed inline style */
+      height: auto !important;  /* auto height to fit contents */
+      padding: 15px 20px;
+      margin-bottom: 30px;    /* spacing between stacked cards */
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
-    .featureImage{
-      font-size: 2rem;
+  
+    .featureImage {
+      width: 180px !important;  /* smaller square image */
+      height: 180px !important;
+      margin-bottom: 24px;
+    }
+  
+    .featureTitle {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+  
+    .featureDescription {
+      width: 280px !important;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      font-weight: 400;
     }
   }
   @media only screen and (min-width: 356px) and (max-width: 365px){
     .featuresContainer {
       flex-direction: column;
-      margin-left: 0.2rem;
-    } 
-    .featureCard{
-      width: 19rem;
-      margin-left: 0rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 28rem;
-      
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;       /* smaller side margin on mobile */
+      padding: 15px 0;
     }
-    .featureDescription{
-      width: 15rem;
-      margin-left: 20px;
+  
+    .featureCard {
+      width: 320px !important;  /* override fixed inline style */
+      height: auto !important;  /* auto height to fit contents */
+      padding: 15px 20px;
+      margin-bottom: 30px;    /* spacing between stacked cards */
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
-    .featureImage{
-      font-size: 2rem;
+  
+    .featureImage {
+      width: 180px !important;  /* smaller square image */
+      height: 180px !important;
+      margin-bottom: 24px;
+    }
+  
+    .featureTitle {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+  
+    .featureDescription {
+      width: 280px !important;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      font-weight: 400;
     }
   }
 
   @media only screen and (min-width: 370px) and (max-width: 395px){
     .featuresContainer {
       flex-direction: column;
-      margin-left: 0.4rem;
-    } 
-    .featureCard{
-      width: 21rem;
-      margin-left: 0rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 28rem;
-      
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;       /* smaller side margin on mobile */
+      padding: 15px 0;
     }
-    .featureDescription{
-      width: 19.5rem;
-      margin-left: -2px;
+  
+    .featureCard {
+      width: 320px !important;  /* override fixed inline style */
+      height: auto !important;  /* auto height to fit contents */
+      padding: 15px 20px;
+      margin-bottom: 30px;    /* spacing between stacked cards */
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
-    .featureImage{
-      font-size: 2rem;
+  
+    .featureImage {
+      width: 180px !important;  /* smaller square image */
+      height: 180px !important;
+      margin-bottom: 24px;
+    }
+  
+    .featureTitle {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+  
+    .featureDescription {
+      width: 280px !important;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      font-weight: 400;
     }
   }
   @media only screen and (min-width: 400px) and (max-width: 450px){
     .featuresContainer {
       flex-direction: column;
-      margin-left: 0.4rem;
-    } 
-    .featureCard{
-      width: 23rem;
-      margin-left: 0.3rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 30rem;
-      
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;       /* smaller side margin on mobile */
+      padding: 15px 0;
     }
-    .featureDescription{
-      width: 19.5rem;
-      margin-left: -2px;
+  
+    .featureCard {
+      width: 320px !important;  /* override fixed inline style */
+      height: auto !important;  /* auto height to fit contents */
+      padding: 15px 20px;
+      margin-bottom: 30px;    /* spacing between stacked cards */
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
-    .featureImage{
-      font-size: 2rem;
+  
+    .featureImage {
+      width: 180px !important;  /* smaller square image */
+      height: 180px !important;
+      margin-bottom: 24px;
+    }
+  
+    .featureTitle {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+  
+    .featureDescription {
+      width: 280px !important;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      font-weight: 400;
     }
   }
 
   @media only screen and (min-width: 460px) and (max-width: 770px){
     .featuresContainer {
       flex-direction: column;
-      margin-left: 0.4rem;
+      margin-left: 3.5rem;
     } 
     .featureCard{
       width: 44.5rem;
@@ -146,7 +232,7 @@
     }
     .featureDescription{
       width: 19.5rem;
-      margin-left: 11.3rem;
+      margin-left: 7rem;
     }
     .featureImage{
       font-size: 2rem;

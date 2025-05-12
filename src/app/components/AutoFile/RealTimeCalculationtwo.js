@@ -1,4 +1,4 @@
-import styles from './AutoFile.module.css';  
+import styles from './RealTimeCalculationtwo.module.css';  
 
 const RealTimeCalculationtwo = () => {  
   return (  

@@ -23,6 +23,8 @@ const logos = [
   'Echo Valley',
 ];
 
+const specialFont = ' Panchang, "Panchang Placeholder", sans-serif';
+
 const LogoMarquee = () => {
   return (
     <div className={styles.marqueeContainer}>
@@ -33,9 +35,10 @@ const LogoMarquee = () => {
           return (
             <div key={index} className={styles.logo}>
               <img src={svgSrc} alt={`${logo} logo`} className={styles.logoImage} />
-              <span>{logo}</span>
+              <span className={logo === 'PULSE' ? styles.specialFont : ''}>{logo}</span>
             </div>
           );
+          
         })}
       </div>
     </div>
