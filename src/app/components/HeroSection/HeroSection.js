@@ -21,3 +21,7 @@ export const HeroSection = () => {
     </header>
   );
 };
+
+
+git remote set-url origin https://github.com/nurul-k/framer-clone-version4.git
+
