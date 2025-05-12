@@ -169,15 +169,7 @@
   }
 
   .signupButton {
-    margin-top: 1.5rem;
-    padding: 10px 22px;
-    font-size: 0.95rem;
-    border-radius: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    display: inline-block;
-    text-decoration: none;
+    margin-left: 0rem;
   }
 }
 
