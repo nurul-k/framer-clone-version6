@@ -67,7 +67,7 @@ const UserFeedback = () => {
         </div>
 
         {/* Feedback text */}
-        <p className={styles.feedbackText}>"{current.text}"</p>
+        <p className={styles.feedbackText}>{`"${current.text}"`}</p>
 
         {/* User info with avatar */}
         <div className={styles.userInfo}>
